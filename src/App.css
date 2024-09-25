@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #071631;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
+  position: relative;
+  height: 380px;
+  width: 270px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  z-index: 10;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: -5px 5px 15px black;
+  
+}
+
+.box::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #2d4f81, #498294);
+  z-index: -5;
+}
+
+.search{
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.search input{
+  height: 30px;
+  outline: none;
+  border: none;
+  padding: 0px 10px;
+  background-color: transparent;
+}
+
+.search button{
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 0px 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.img img{
+  height: 100px;
+  margin-top: 5px;
+}
+
+.temp h1{
+  font-size: 60px;
   color: white;
+  width: 100%;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.temp p{
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.foot{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
 }
