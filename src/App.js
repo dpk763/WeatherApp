@@ -43,7 +43,6 @@ function App() {
       setInput('');
     }
   }
-console.log(apiKey);
   return (
     <>
      {data?(
