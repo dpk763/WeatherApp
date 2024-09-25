@@ -37,7 +37,7 @@ This **Weather App** is a simple and elegant application built with **React.js**
 
 ## Technologies Used
 - **React.js**: For building the user interface.
-- **OpenWeather API** (or your chosen weather API): To fetch real-time weather data.
+- **rapidapi API** (or your chosen weather API): To fetch real-time weather data.
 - **CSS**: For styling and creating the sleek UI.
 
 ## API Integration
